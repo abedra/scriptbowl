@@ -1,0 +1,13 @@
+#!/bin/sh
+
+for next in lib/*: src; do
+    CP=$CP$next
+done
+
+CP=$CP":"
+
+for next in lib/*: src/clj: src/cljs: test/cljs; do
+    CP=$CP$CLOJURESCRIPT_HOME'/'$next
+done
+
+java -cp $CP clojure.main
