@@ -48,14 +48,5 @@
               "click"
               do-tracker-clicked)
 
-
-
-
-
 (dom/append (dom/get-element "results")
             (dom/html->dom "<h4>Test</h4>"))
-
-
-
-(in-ns 'scriptbowl.main)
-
