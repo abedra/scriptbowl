@@ -9,8 +9,8 @@
             (juxt first identity)
             data/parsed)))
 
-(defn ticker-for [ticker symbol]
-  (ticker symbol))
+(defn ticker-for [symbol]
+  ((ticker) symbol))
 
 (defn open-for [symbol]
   (second (ticker-for symbol)))

@@ -1,6 +1,6 @@
 (ns scriptbowl.misc)
 
-(use 'scriptbowl.core)
+(use 'scriptbowl.main)
 
 (read-data)
 (first (read-data))
@@ -24,12 +24,19 @@
 
 (js/alert "Hello World")
 
+(in-ns 'scriptbowl.main)
+
 (js/alert (high-for "A"))
+
+(in-ns 'user)
 
 (ns dom.test
   (:require [clojure.browser.dom :as dom]
             [goog.events :as event]
             [scriptbowl.main :as sb]))
+
+(dom/append (dom/get-element "results")
+            (dom/element [:ul [:li (pr-str (sb/ticker-for "MSFT"))]]))
 
 (dom/remove-children "results")
 

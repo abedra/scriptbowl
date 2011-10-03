@@ -1,4 +1,4 @@
-(ns scriptbowl.core
+(ns scriptbowl.main
   (:require [clojure.java.io :as io]
             [scriptbowl.csv :as csv]
             [scriptbowl.data :as data]))
@@ -12,8 +12,8 @@
             (juxt first identity)
             data/parsed)))
 
-(defn ticker-for [ticker symbol]
-  (ticker symbol))
+(defn ticker-for [symbol]
+  ((ticker) symbol))
 
 (defn open-for [symbol]
   (second (ticker-for symbol)))
