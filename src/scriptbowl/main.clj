@@ -18,13 +18,13 @@
 (defn open-for [symbol]
   (second (ticker-for symbol)))
 
-(defn close-for [symbol]
+(defn high-for [symbol]
   (nth (ticker-for symbol) 2))
 
-(defn high-for [symbol]
+(defn low-for [symbol]
   (nth (ticker-for symbol) 3))
 
-(defn low-for [symbol]
+(defn close-for [symbol]
   (nth (ticker-for symbol) 4))
 
 (defn volume-for [symbol]

@@ -5,14 +5,15 @@
   (:require [scriptbowl.main :as main]))
 
 (defn -main []
-  (let [frame (JFrame. "Stock Analyzer")
+  (let [frame (JFrame. "Super Ultra Stock Shredder 2000, 3D Edition")
         ticker-text (JTextField.)
         results (JLabel.)
         button (JButton. "Lookup")]
     (.addActionListener button
                         (reify ActionListener
                           (actionPerformed [this evt]
-                            (.setText results (prn-str (main/ticker-for (.getText ticker-text)))))))
+                            (.setText results (prn-str
+                                               (main/ticker-for (.getText ticker-text)))))))
     (doto frame
       (.setDefaultCloseOperation JFrame/DISPOSE_ON_CLOSE)
       (.setLayout (GridLayout. 2 2 3 3))

@@ -1,0 +1,28 @@
+* Clojure Community
+** Clojure turns 4 this month
+** 1.3.0 just released!
+*** 41 different contributors for the release
+** Officially supported libraries alongside Clojure
+*** Clojure-contrib was separated into individual libraries to allow for more control over the release process of each library
+*** Hundreds more great libraries in active development
+** ClojureScript released in July!
+*** Next level JavaScript maneuver
+*** The browser connected REPL is the REPL of the future
+** Rapidly Expanding
+*** 8 Clojure talks at J1 this year!
+*** 5428 Members on the community mailing list
+*** 184 Members on the dev mailing list
+*** #clojure on irc.freenode.net is very active
+** Currently 6 books and counting published on Clojure
+*** Programming Clojure 1st and 2nd Edition
+*** Clojure Programming
+*** The Joy of Clojure
+*** Practical Clojure
+*** Clojure in Action
+** Annual conference clojure-conj (a.k.a. "the conj")
+*** Sold out at 200 people last year
+*** Sold out at 350 people this year with possibly more slots open
+** Major Clojure success stories!
+*** Backtype aquired by Twitter this year
+*** Great list of big names using Clojure
+**** http://dev.clojure.org/display/community/Clojure+Success+Stories
